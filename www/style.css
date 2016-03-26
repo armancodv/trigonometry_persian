@@ -241,6 +241,7 @@ select,input {
 	color:#555555;
 	height:30px;
 	text-align:right;
+	direction:ltr;
 	padding-right:10px;
 	font-size:12px;
 }
