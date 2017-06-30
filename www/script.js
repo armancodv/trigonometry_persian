@@ -88,11 +88,11 @@ app.controller('myCtrl', function($scope) {
 		$scope.value['arccsc']=0;
 		$scope.value['arcsec']=0;
 		$scope.result = [];
-	}
+	};
 
 	$scope.select_info = function(number) {
 		$scope.page_id=number;
-	}
+	};
 	
 	$scope.calculate = function() {
 		$scope.result = [];
@@ -117,6 +117,7 @@ app.controller('myCtrl', function($scope) {
 });
 
 function gotopage(page_number) {
+    window.location.hash = '#page' + page_number;
 	for(i=1;i<=4;i++) {
 		if(i===page_number) {
 			document.getElementById('page'+i).style.display='block';
